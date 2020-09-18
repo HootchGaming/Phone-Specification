@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 
 class Phone {
@@ -9,38 +9,25 @@ public:
 	string price;
 	string battery;
 	string cpu;
-
+	Phone(string apn, string aRAM, string aprice, string abattery, string acpu) {
+		productName = apn;
+		RAM = aRAM;
+		price = aprice;
+		battery = abattery;
+		cpu = acpu;
+	}
 };
 
 int main(){
 	string b;
-	Phone samsungA50s;
-	samsungA50s.productName = "Product Name = Samsung Galaxy A50s";
-	samsungA50s.RAM = "RAM = 6gb or 4gb";
-	samsungA50s.price = "Price = 20,000 RS";
-	samsungA50s.battery = "Battery = 4000 mAh";
-	samsungA50s.cpu = "CPU = Samsung Exynos 9611";
+	Phone samsungA50s("Product Name = Samsung Galaxy A50s", "RAM = 6gb or 4gb", "Price = 20,000 RS", "Battery = 4000 mAh", "CPU = Samsung Exynos 9611");
 
-	Phone samsungS20;
-	samsungS20.productName = "Product Name = Samsung Galaxy S20";
-	samsungS20.RAM = "RAM = 12gb";
-	samsungS20.price = "Price = 97,999 RS";
-	samsungS20.battery = "Battery = 4000 mAh";
-	samsungS20.cpu = "CPU = Samsung Exynos 990";
+	Phone samsungS20("Product Name = Samsung Galaxy S20", "RAM = 12gb", "Price = 97,999 RS", "Battery = 4000 mAh", "CPU = Samsung Exynos 990");
 
-	Phone oneplus8pro;
-	oneplus8pro.productName = "Product Name = OnePlus 8 Pro";
-	oneplus8pro.RAM = "RAM = 12gb";
-	oneplus8pro.price = "Price = 54,999 RS";
-	oneplus8pro.battery = "Battery = 4510 mAh";
-	oneplus8pro.cpu = "CPU = Qualcomm Snapdragon 865";
+	Phone oneplus8pro("Product Name = OnePlus 8 Pro", "RAM = 12gb", "Price = 54,999 RS", "Battery = 4510 mAh", "CPU = Qualcomm Snapdragon 865");
 
-	Phone iphone11pro;
-	iphone11pro.productName = "Product Name = Apple iPhone 11 Pro";
-	iphone11pro.RAM = "RAM = 4gb";
-	iphone11pro.price = "Price = 99,599 RS";
-	iphone11pro.battery = "Battery = 3046 mAh";
-	iphone11pro.cpu = "CPU = Apple A13 Bionic";
+
+	Phone iphone11pro("Product Name = Apple iPhone 11 Pro", "RAM = 4gb", "Price = 99,599 RS", "Battery = 3046 mAh", "CPU = Apple A13 Bionic");
 
 	string a;
 	while (1 < 10) {
